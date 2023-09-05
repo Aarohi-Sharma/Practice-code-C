@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int a, b;
+    char opt;
+    printf("Enter two numbers for calculation:");
+    scanf("%d %d", &a, &b);
+    printf("Enter A for addition, B for subtraction, C for multiplicaion, D for division:");
+    scanf(" %c", &opt);
+    switch(opt)
+    {
+        case 'A':
+        printf("Sum is %d", a+b);
+        break;
+        case 'B':
+        printf("Difference is %d", a-b);
+        break;
+        case 'C':
+        printf("Product is %d", a*b);
+        break;
+        case 'D':
+        printf("Quotient is %d", a/b);
+        break;
+    }
+    return 0;
+}
